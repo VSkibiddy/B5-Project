@@ -1,30 +1,20 @@
 using UnityEngine;
 
-public class KeyPickup : Interactable
+public class KeyPickup : MonoBehaviour
 {
-    // Settings
-    [Header("Key Settings")]
-    [Tooltip("Muss exakt mit der 'Key Id' im Door-Skript übereinstimmen!")]
-    public string keyId = "Key1";
-    public string keyName = "Rusty Key";
+    public ItemData item;
 
-    // Texts
-    [Header("Texts (English)")]
-    public string promptText = "[E] Pick up {0}";
-    public string pickedUpText = "You picked up the {0}.";
-
-    // Interaction
-    public override string GetPrompt()
+    void Start()
     {
-        return string.Format(promptText, keyName);
+        // Schon im Inventar? Dann liegt es nicht mehr hier
+        if (InventoryData.Has(item))
+            gameObject.SetActive(false);
     }
 
-    public override void Interact(PlayerController player)
+    // Wird vom Button (OnClick) aufgerufen
+    public void Pickup()
     {
-        player.AddKey(keyId);
-
-        BlackoutManager.Say(string.Format(pickedUpText, keyName));
-
+        InventoryData.Add(item);
         gameObject.SetActive(false);
     }
 }
