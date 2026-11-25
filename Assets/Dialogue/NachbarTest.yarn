@@ -1,0 +1,12 @@
+﻿title: NachbarTest
+---
+Nachbar: Am Bahnhof gibt es eine Ort wo man Leute treffen kann. Willst du mitkommen?
+Du: Ich habe genug eigene Probleme.
+-> Ich gehe mit.
+    Du: Na gut. Ich komme mit.
+    <<setflag "kenntBahnhof">>
+    Nachbar: Cool.
+-> Ich gehe zurück.
+    Du: Ne, Nicht mein Problem.
+    Nachbar: ...
+===

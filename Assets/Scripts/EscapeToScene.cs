@@ -11,8 +11,9 @@ public class EscapeToScene : MonoBehaviour
     void Update()
     {
         if (!EscPressed()) return;
-
-        if (InventoryUI.IsOpen)
+        if (MapPanel.IsOpen)
+            MapPanel.Instance.Close();
+        else if (InventoryUI.IsOpen)
             InventoryUI.Instance.Close();
         else
             SceneManager.LoadScene(sceneName);
