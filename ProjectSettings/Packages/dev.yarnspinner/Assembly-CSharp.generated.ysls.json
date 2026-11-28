@@ -1,0 +1,10 @@
+{
+"version":3,
+"commands":[
+{"yarnName":"clearflag","definitionName":"global::DialogueManager.ClearFlag","fileName":"3DBlackoutGame\\Assets\\Scripts\\DialogueManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":22,"character":23},"end":{"line":22,"character":32}},"parameters":[{"name":"flag","isParamsArray":false,"type":"string"}]},
+{"yarnName":"setflag","definitionName":"global::DialogueManager.SetFlag","fileName":"3DBlackoutGame\\Assets\\Scripts\\DialogueManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":16,"character":23},"end":{"line":16,"character":30}},"parameters":[{"name":"flag","isParamsArray":false,"type":"string"}],"documentation":"Wird von Yarn einmalig f\u00FCrs ganze Projekt registriert, nicht pro Szene."}
+],
+"functions":[
+
+]
+}

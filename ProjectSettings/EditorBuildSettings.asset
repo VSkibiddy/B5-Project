@@ -14,5 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Keller.unity
     guid: 717ed54faba11bb44982c068b496b5bc
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  - enabled: 1
+    path: Assets/Scenes/DialogueTest.unity
+    guid: eca90874856df9b419c091b48fa46160
+  - enabled: 1
+    path: Assets/Scenes/Bahnhof.unity
+    guid: 5fb041956698fb1498227d14805aaebc
+  m_configObjects: {}
